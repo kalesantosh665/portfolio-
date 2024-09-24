@@ -4,80 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Minimalist Profile</title>
+    <title>Creative Profile</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="fixed-nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="santosh.jpg.jpeg" alt="Your Name" class="profile-pic">
+                <h1>Santosh Kale</h1>
+                <p class="job-title">Web Developer</p>
+            </div>
 
-    <section id="about">
-        <div class="intro">
-            <img src="santosh.jpg.jpeg" alt="Your Name" class="profile-pic" height="100px">
-            <h1>Your Name</h1>
-            <p>Hi, my name is Santosh kale.I recently Studied from Pune University in computer engineering in 3rd year. My clg name is Marathwada Mitramandal’s Institute of Technology,Lohgaon,pune.Im particularly excited about this opportunity because I believe my experience in [skill/industry] aligns well with the goals of your team, and I’m eager to contribute to web Development intership.”“Thank you for giving me the opportunity to interview today. I’m excited to learn more about the position and how I can contribute.”</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <img src="html logo.jpg.jpeg"height="100px">
-                <h3>HTML5</h3>
-            </div>
-            <div class="skill-item">
-                <img src="css.jpg"height="100px">
-                <h3>CSS3</h3>
-            </div>
-            <div class="skill-item">
-                <img src="js logo.jpj.jpeg"height="100px">
-                <h3>JavaScript</h3>
-            </div>
-            <div class="skill-item">
-                <img src="react.jpj.jpeg"height="100px">
-                <h3>React</h3>
-            </div>
-            <!-- Add more skill items -->
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="timeline">
-            <!-- First Project -->
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Project 1</h3>
-                    <p>The Netflix Clone project is a front-end web development project that replicates the user interface (UI) of Netflix using HTML and CSS. This clone focuses on mimicking the overall look and feel of Netflix, including its layout, styling, and responsive design. While the clone does not include real functionality like streaming content or subscription management, it serves as a hands-on learning exercise for developers to practice and showcase their skills in web design</p>
-                    <img src="netflix.jpj.png" alt="Project 1" height="500px">
+            <div class="profile-body">
+                <p class="bio">Hi, my name is Santosh kale.I recently Studied from Pune University in computer engineering in 3rd year.
+                    My clg name is Marathwada Mitramandal’s Institute of Technology,Lohgaon,pune.
+                    Im particularly excited about this opportunity because I believe my experience in [skill/industry] aligns well with the goals of your team,
+                    and I’m eager to contribute to web Development intership.”“Thank you for giving me the opportunity to interview today.
+                    I’m excited to learn more about the position and how I can contribute.”</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/jobs/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/kalesantosh665" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                 </div>
+
+                <button class="btn-show-more">See My Projects</button>
             </div>
-            
-            <!-- Add more timeline items -->
         </div>
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: <a href="https://mail.google.com/mail/u/0/#inbox">kalesantosh665@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/jobs/" target="_blank">https://www.linkedin.com/in/santosh-tatyaraokale-233725321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a></p>
-            <p>GitHub: <a href="https://github.com/" target="_blank">https://github.com/kalesantosh665</a></p>
-        </div>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skill-list">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React</div>
+                <div class="skill-card">Python</div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="portfolio.png" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Project 1</h3>
+                        <p>The portfolio project is a front-end web development project that replicates the user interface (UI)
+                            of Netflix using HTML,CSS &JS.</p>
+                    </div>
+                </div>
+              
+              
+                
+            </div>
+        </section>
+
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="kalesantosh665" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
